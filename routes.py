@@ -1,10 +1,10 @@
-from flask import Blueprint, render_template, request, redirect, flash
+from flask import Blueprint, render_template, request, flash
 from werkzeug.security import generate_password_hash
 from models import User
 from repo import save_user, get_user_by_username
 
 user_bp = Blueprint('user', __name__)
-sign_up_page = 'sign_up_page.html'
+sign_up_page = 'signup.html'
 
 @user_bp.route('/')
 def home():

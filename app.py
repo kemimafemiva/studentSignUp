@@ -16,7 +16,7 @@
 # │
 # ├── templates/
 # │   ├── index.html        # Home page template.
-# │   └── sign_up_page.html # Signup page template.
+# │   └── signup.html # Signup page template.
 # │
 # └── scripts/
 #     ├── set_up_mac.sh      # Shell script for macOS: sets up virtualenv, installs requirements, starts Docker, loads env vars, creates MySQL DB & user table, runs the app.
