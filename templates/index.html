@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body class="">
-    <nav class="navbar navbar-expand-lg">
-      <div class="main-nav-cont">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://miva.university/wp-content/uploads/2023/05/Miva-Logo-White-Horizontal-1.png"
-            class="attachment-full size-full wp-image-19818"
-            alt=""
-            width="200"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Signup</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Signup</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Signup</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div>
-      <a href="/templates/signup.html" style="height: 100%; ">
-        <marquee behavior="scroll" direction="left">
-          Click here to apply now!
-        </marquee>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: white;
+      color: #152f4d;
+    }
+    .navbar {
+      background-color: #152f4d;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #152f4d;
+      color: white;
+    }
+    main {
+      flex: 1; /* This pushes footer to bottom when content is short */
+    }
+    .footer {
+      background-color: #152f4d;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+     <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://miva.university/wp-content/uploads/2023/05/Miva-Logo-White-Horizontal-1.png" alt="Miva Logo" height="40">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/signup">Signup</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <main>
     <div class="hero">
-      <h1>Welcome to <br> Miva Open University</h1>
+      <h1>Welcome to Miva Open University</h1>
       <p>Empowering minds, shaping the future.</p>
-      <a href="#" class="btn btn-light">Learn More</a>
+      <a href="/signup" class="btn btn-light">Sign Up</a>
     </div>
 
-    <div class="container my-5">
+    <div class="container mt-5">
       <div class="row text-center">
         <div class="col-md-4">
-          <h3>Quality Education</h3>
-          <p>
-            We offer world-class programs designed to equip you with the skills
-            you need.
-          </p>
+          <h4>Quality Education</h4>
+          <p>World-class programs to equip you with in-demand skills.</p>
         </div>
         <div class="col-md-4">
-          <h3>Flexible Learning</h3>
-          <p>
-            Learn at your own pace with our flexible online learning system.
-          </p>
+          <h4>Flexible Learning</h4>
+          <p>Study at your own pace with our online learning system.</p>
         </div>
         <div class="col-md-4">
-          <h3>Global Community</h3>
-          <p>
-            Join a vibrant community of learners and educators from around the
-            world.
-          </p>
+          <h4>Global Community</h4>
+          <p>Join a network of learners and educators worldwide.</p>
         </div>
       </div>
     </div>
+  </main>
 
-    <div class="footer">
-      <p>&copy; 2025 Miva Open University. All Rights Reserved.</p>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <div class="footer">
+    &copy; 2025 Miva Open University. All Rights Reserved.
+  </div>
+</body>
 </html>
