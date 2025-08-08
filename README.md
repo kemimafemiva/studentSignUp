@@ -39,7 +39,7 @@ studentSignUp/
 │
 ├── templates/
 │   ├── index.html
-│   ├── sign_up_page.html
+│   ├── signup.html
 │
 └── scripts/
     ├── set_up_mac.sh
