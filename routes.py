@@ -45,8 +45,7 @@ def signup():
             level=int(level_raw)
         )
         save_user(user)
-
-        flash('Signup successful!', 'success')
-        return redirect('/')
-
+        flash("Signup successful!", 'success')
+        return render_template(sign_up_page, username='', email='', faculty='', department='', level='')
+    
     return render_template(sign_up_page)
